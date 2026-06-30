@@ -8,22 +8,22 @@ As such, its performance is much faster than a native python library.
 ## Usage
 
 The library exposes multiple classes:
-- [`Beatmap`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L48-L119): Parsed `.osu` file
-- [`GameMode`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L22-L30)
+- [`Beatmap`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L48-L119): Parsed `.osu` file
+- [`GameMode`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L22-L30)
 - Calculators
-  - [`Difficulty`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L121-L274): Class to calculate difficulty attributes, strains, or create gradual calculators
-  - [`Performance`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L276-L493): Performance attributes calculator
-  - [`GradualDifficulty`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L495-L519): Calculator to calculate difficulty attributes after each hitobject
-  - [`GradualPerformance`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L521-L546): Calculator to calculate performance attributes after each hitresult
-  - [`BeatmapAttributesBuilder`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L548-L667): Beatmap attributes calculator
+  - [`Difficulty`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L121-L274): Class to calculate difficulty attributes, strains, or create gradual calculators
+  - [`Performance`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L276-L493): Performance attributes calculator
+  - [`GradualDifficulty`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L495-L519): Calculator to calculate difficulty attributes after each hitobject
+  - [`GradualPerformance`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L521-L546): Calculator to calculate performance attributes after each hitresult
+  - [`BeatmapAttributesBuilder`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L548-L667): Beatmap attributes calculator
 - Results
-  - [`DifficultyAttributes`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L750-L1071)
-  - [`Strains`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L1186-L1268): Strain values of a difficulty calculation, suitable to plot difficulty over time
-  - [`PerformanceAttributes`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L1073-L1184)
-  - [`BeatmapAttributes`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L1270-L1348)
-- [`HitResultPriority`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L32-L38): Passed to `Performance`, decides whether specified accuracy should be realized through good or bad hitresults
-- [`HitResultGenerator`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L40-L46): Passed to `Performance`, decides how hitresults are being generated
-- [`ScoreState`](https://github.com/MaxOhn/rosu-pp-py/blob/b78ec5c9f4c876ff1d054c267cd242fd93267f73/rosu_pp_py.pyi#L669-L748): Hitresults and max combo of a score, found in `PerformanceAttributes` and passed to gradual calculators
+  - [`DifficultyAttributes`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L750-L1071)
+  - [`Strains`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L1186-L1268): Strain values of a difficulty calculation, suitable to plot difficulty over time
+  - [`PerformanceAttributes`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L1073-L1184)
+  - [`BeatmapAttributes`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L1270-L1348)
+- [`HitResultPriority`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L32-L38): Passed to `Performance`, decides whether specified accuracy should be realized through good or bad hitresults
+- [`HitResultGenerator`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L40-L46): Passed to `Performance`, decides how hitresults are being generated
+- [`ScoreState`](https://github.com/MaxOhn/rosu-pp-py/blob/c7e1fb2bc365d52786703083c45f4c1b0b671d43/rosu_pp_py.pyi#L669-L748): Hitresults and max combo of a score, found in `PerformanceAttributes` and passed to gradual calculators
 
 ## Example
 
