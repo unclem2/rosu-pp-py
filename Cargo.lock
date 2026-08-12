@@ -215,7 +215,7 @@ dependencies = [
 [[package]]
 name = "rosu-pp"
 version = "4.0.1"
-source = "git+https://github.com/unclem2/rosu-pp#1a03679a569687c53116de8f1cfd9c9a303ca864"
+source = "git+https://github.com/unclem2/rosu-pp#991e12ee7442027555cdb100fd5628d58c922420"
 dependencies = [
  "divan",
  "rosu-map",
