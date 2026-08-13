@@ -26,6 +26,7 @@ define_class! {
         pub pp_difficulty: f64?,
         pub combo_based_estimated_miss_count: f64?,
         pub score_based_estimated_miss_count: f64?,
+        pub pp_reading: f64?,
         pub aim_estimated_slider_breaks: f64?,
         pub speed_estimated_slider_breaks: f64?,
     }
@@ -39,6 +40,7 @@ impl From<OsuPerformanceAttributes> for PyPerformanceAttributes {
             pp_acc,
             pp_aim,
             pp_flashlight,
+            pp_reading,
             pp_speed,
             effective_miss_count,
             speed_deviation,
@@ -54,6 +56,7 @@ impl From<OsuPerformanceAttributes> for PyPerformanceAttributes {
             pp_accuracy: Some(pp_acc),
             pp_aim: Some(pp_aim),
             pp_flashlight: Some(pp_flashlight),
+            pp_reading: Some(pp_reading),
             pp_speed: Some(pp_speed),
             effective_miss_count: Some(effective_miss_count),
             speed_deviation,
